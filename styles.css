@@ -7,6 +7,30 @@ body {
     margin:0;
 }
 
+border,tr,td {
+    border:none;
+    padding:0;
+    margin:0;
+}
+
+table {
+    border-collapse: collapse; 
+    border-spacing:0;
+    border:none;
+}
+
+#topNavBar{
+    z-index: 5;
+    position:absolute;
+    background-color: white;
+    height:12.6vw;
+    top:-12.5vw;
+    width:100%;
+    min-width:400px;
+    animation: topMenuDown 13s;
+    animation-fill-mode: forwards;
+}
+
 #leftSide{
     position:absolute;
     width:12.6vw;
@@ -18,6 +42,20 @@ body {
     animation: leftMenuIn 13s;
     animation-fill-mode: forwards;
 }
+
+
+#rightSide{
+    position:absolute;
+    width:12.5vw;
+    height: calc(12.6vw * 5);
+    min-height: 100vh;
+    z-index: 5;
+    background-color: white;
+    left: calc(12.5vw * 8);
+    animation: rightMenuIn 13s;
+    animation-fill-mode: forwards;
+}
+
 
 #mainLogoText{
     z-index: 5;
@@ -45,17 +83,6 @@ body {
     animation-fill-mode: forwards;
 }
 
-#rightSide{
-    position:absolute;
-    width:12.5vw;
-    height: calc(12.6vw * 5);
-    min-height: 100vh;
-    z-index: 5;
-    background-color: white;
-    left: calc(12.5vw * 8);
-    animation: rightMenuIn 13s;
-    animation-fill-mode: forwards;
-}
 
 #startBlack{
     background-color:black;
@@ -76,23 +103,14 @@ body {
     pointer-events : none;
 }
 
-
-
-#topNavBar{
-    z-index: 5;
-    position:absolute;
-    background-color: white;
-    height:12.6vw;
-    top:-12.5vw;
-    width:100%;
-    min-width:400px;
-    animation: topMenuDown 13s;
-    animation-fill-mode: forwards;
+#topLeftLogo{
+    width:14vw;
+    padding-left: 12.5vw;
 }
 
 .navOption{
     color:gray;
-    padding:25px 12px;
+    padding-left:12px;
     font-size:1.2em;
 }
 
@@ -105,18 +123,6 @@ body {
     overflow: hidden;
     min-width:70px;
     min-height: 70px;
-}
-
-border,tr,td {
-    border:none;
-    padding:0;
-    margin:0;
-}
-
-table {
-    border-collapse: collapse; 
-    border-spacing:0;
-    border:none;
 }
 
 .logoImages{
@@ -183,22 +189,22 @@ table {
 }
 
 .firstIn{
-    animation:fadeInOne 12s;
+    animation:fadeInOne 10s;
     animation-fill-mode: forwards;
 }
 
 .secondIn{
-    animation:fadeInTwo 12s;
+    animation:fadeInTwo 10s;
     animation-fill-mode: forwards;
 }
 
 .thirdIn{
-    animation:fadeInThree 12s;
+    animation:fadeInThree 10s;
     animation-fill-mode: forwards;
 }
 
 .fourthIn{
-    animation:fadeInFour 12s;
+    animation:fadeInFour 10s;
     animation-fill-mode: forwards;
 }
 
