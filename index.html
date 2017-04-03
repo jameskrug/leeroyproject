@@ -1,0 +1,268 @@
+
+
+<!doctype html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    
+     
+     
+    <script>
+    
+        $(document).ready(function() {
+            
+            $('.bwImage').mouseover(function(){
+                var randomImage = "images/img" + (Math.floor((Math.random() * 18) + 1) + 40) + ".png";
+                $(this).attr('src', randomImage);
+            });
+            
+        });
+    
+         $(window).scroll(function(){
+            var offsetBy = ($(window).width() / 8) * 5;
+            
+            if ($(this).scrollTop() >= offsetBy && $(this).scrollTop() <= (offsetBy + 2600)){
+                $('.logoImages').css('position', 'fixed');
+                $('.movingLogo').css('position', 'fixed');
+            }
+            else{
+                $('.logoImages').css('position', 'absolute');
+                $('.movingLogo').css('position', 'absolute');
+            }
+            $("#theFixed").css("opacity", $(this).scrollTop() > offsetBy ? ((700 + offsetBy) - $(this).scrollTop()) * .002 : 1);
+            $("#theFixed2").css("opacity", $(this).scrollTop() > (300 + offsetBy) ? ($(this).scrollTop() < (800 + offsetBy) ? (($(this).scrollTop() - (500 + offsetBy)) * .003) : (((1300 + offsetBy) - $(this).scrollTop()) * 0.005)) : 0);
+            $("#theFixed3").css("opacity", $(this).scrollTop() > (1200 + offsetBy) ? ($(this).scrollTop() < (1800 + offsetBy) ? (($(this).scrollTop() - (1200 + offsetBy)) * .003) : (((2000 + offsetBy) - $(this).scrollTop()) * 0.005)) : 0);
+            $("#theFixed4").css("opacity", $(this).scrollTop() > (2100 + offsetBy) ? ($(this).scrollTop() < (2600 + offsetBy) ? (($(this).scrollTop() - (1500 + offsetBy)) * .003) : (((2600 + offsetBy) - $(this).scrollTop()) * 0.005)) : 0);
+            
+        });
+    </script>
+    <title>Telecon</title>
+    <link rel="stylesheet" href="styles.css">
+     
+</head>
+    <body>
+        <div id="leftSide"></div>
+        <div id="rightSide"></div>
+        <div id="topNavBar">
+            <table>
+                <tr>
+                    <td style="width:12.5vw;"></td>
+                    <td><img src="images/topLeftLogo.png"></td>
+                    <td style="width:400px"></td>
+                    <td><p class="navOption">Services</p></td>
+                    <td><p class="navOption">A&nbsp;propos</p></td>
+                    <td><p class="navOption">Carriers</p></td>
+                    <td><p class="navOption">a&nbsp;la&nbsp;une</p></td>
+                    <td><p class="navOption">contact</p></td>
+                </tr>
+            </table>
+        </div>
+        
+        <div id="fadeBlack"></div>
+        <div id="mainLogoText">
+            <img src="images/centerLogo.png">
+            <p>design • build • connect</p>
+        </div>
+        <div id="mainLogoText2">
+            <p>concevois. batir. connecter</p>
+            <p>nous sommes le plus important foumisser...</p>
+        </div>
+        
+        <div id="startBlack"></div>
+        <div id="theTableDiv">
+           
+            <table>
+                <tr>
+                    <td>
+                        <div class="bgImage fourthIn"><img class="bwImage" src="images/img40.png"></div>
+                    </td>
+                    <td>
+                        <div class="bgImage thirdIn"><img class="bwImage" src="images/img41.png"></div>
+                    </td>
+                    <td>
+                        <div class="bgImage fourthIn"><img class="bwImage" src="images/img42.png"></div>
+                    </td>
+                    <td>
+                        <div class="bgImage secondIn"><img class="bwImage" src="images/img43.png"></div>
+                    </td>
+                    <td>
+                        <div class="bgImage firstIn"><img class="bwImage" src="images/img44.png"></div>
+                    </td>
+                    <td>
+                        <div class="bgImage secondIn"><img class="bwImage" src="images/img45.png"></div>
+                    </td>
+                    <td>
+                        <div class="bgImage thirdIn"><img class="bwImage" src="images/img46.png"></div>
+                    </td>
+                    <td>
+                        <div class="bgImage fourthIn"><img class="bwImage" src="images/img47.png"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="bgImage fourthIn"><img class="bwImage" src="images/img43.png"></div>
+                    </td>
+                    <td>
+                        <div class="bgImage thirdIn"><img class="bwImage" src="images/img47.png"></div>
+                    </td>
+                    <td>
+                        <div class="bgImage fourthIn"><img class="bwImage" src="images/img42.png"></div>
+                    </td>
+                    <td>
+                        <div class="bgImage secondIn"><img class="bwImage" src="images/img40.png"></div>
+                    </td>
+                    <td>
+                        <div class="bgImage thirdIn"><img class="bwImage" src="images/img56.png"></div>
+                    </td>
+                    <td>
+                        <div class="bgImage firstIn"><img class="bwImage" src="images/img51.png"></div>
+                    </td>
+                    <td>
+                        <div class="bgImage secondIn"><img class="bwImage" src="images/img44.png"></div>
+                    </td>
+                    <td>
+                        <div class="bgImage secondIn"><img class="bwImage" src="images/img40.png"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="bgImage fourthIn"><img class="bwImage" src="images/img48.png"></div>
+                    </td>
+                    <td>
+                        <div class="bgImage secondIn"><img class="bwImage" src="images/img49.png"></div>
+                    </td>
+                    <td>
+                        <div class="bgImage thirdIn"]><img class="bwImage" src="images/img50.png"></div>
+                    </td>
+                    <td>
+                        <div class="bgImage fourthIn"><img class="bwImage" src="images/img51.png"></div>
+                    </td>
+                    <td>
+                        <div class="bgImage secondIn"><img class="bwImage" src="images/img52.png"></div>
+                    </td>
+                    <td>
+                        <div class="bgImage fourthIn"><img class="bwImage" src="images/img53.png"></div>
+                    </td>
+                    <td>
+                        <div class="bgImage secondIn"><img class="bwImage" src="images/img54.png"></div>
+                    </td>
+                    <td>
+                        <div class="bgImage fourthIn"><img class="bwImage" src="images/img55.png"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="bgImage secondIn"><img class="bwImage" src="images/img56.png"></div>
+                    </td>
+                    <td>
+                        <div class="bgImage secondIn"><img class="bwImage" src="images/img57.png"></div>
+                    </td>
+                    <td>
+                        <div class="bgImage firstIn"><img class="bwImage" src="images/img44.png"></div>
+                    </td>
+                    
+                    <td>
+                        <div class="bgImage fourthIn"><img class="bwImage" src="images/img40.png"></div>
+                    </td>
+                    <td>
+                        <div class="bgImage firstIn"><img class="bwImage" src="images/img41.png"></div>
+                    </td>
+                    <td>
+                        <div class="bgImage fourthIn"><img class="bwImage" src="images/img42.png"></div>
+                    </td>
+                    <td>
+                        <div class="bgImage secondIn"><img class="bwImage" src="images/img43.png"></div>
+                    </td>
+                    <td>
+                        <div class="bgImage thirdIn"><img class="bwImage" src="images/img44.png"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="bgImage thirdIn"><img class="bwImage" src="images/img45.png"></div>
+                    </td>
+                    <td>
+                        <div class="bgImage secondIn"><img class="bwImage" src="images/img46.png"></div>
+                    </td>
+                    <td>
+                        <div class="bgImage thirdIn"><img class="bwImage" src="images/img47.png"></div>
+                    </td>
+                    <td>
+                        <div class="bgImage firstIn"><img class="bwImage" src="images/img48.png"></div>
+                    </td>
+                    <td>
+                        <div class="bgImage firstIn"><img class="bwImage" src="images/img49.png"></div>
+                    </td>
+                    <td>
+                        <div class="bgImage fourthIn"><img class="bwImage" src="images/img50.png"></div>
+                    </td>
+                    <td>
+                        <div class="bgImage thirdIn"><img class="bwImage" src="images/img51.png"></div>
+                    </td>
+                    <td>
+                        <div class="bgImage secondIn"><img class="bwImage" src="images/img52.png"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <table>
+                        <tr>
+                            <td>
+                                <div style="height:3000px;width:50vw;position:relative;justify-content:center;align-items:center;">
+                                    
+                                    <img class="logoImages" id="theFixed" src="images/imgLogoRed.png" usemap="#linkMap">
+                                    <img style="opacity:0" class="logoImages" id="theFixed2" src="images/imgLogoBlue.png">
+                                    <img style="opacity:0" class="logoImages" id="theFixed3" src="images/imgLogoGrey.png">
+                                    <img style="opacity:0" class="logoImages" id="theFixed4" src="images/imgLogoFull.png">
+                                    <diV class="movingLogo">
+                                        <a href="http://www.example.cz/1.html" style="top: 22%;left: 0%;width: 45%;height: 33%;position: absolute;z-index: 10;"></a>
+                                        <a href="http://www.example.cz/2.html" style="top: 47%;left: 45%;width: 25%;height: 62%;;position: absolute;z-index: 10;"></a>
+                                        <a href="http://www.example.cz/3.html" style="top: 0%;height:37%;left: 70%;width: 30%;position: absolute;z-index: 10;"></a>      
+                                    </diV>
+                                </div>
+                            </td>
+                            <td>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <div class="informationBar">
+                                                <p class="informationTitle" style="color:#ed3035">Conception</p>
+                                                <p class="informationText"><b>Inginierie</b></p>
+                                                <p class="informationText">lipsume del fjdsal fjkd afsj dfksa fdkf asfji dfdaj f djisf dsjak fjdks ale;wfi fdisla fhdsau ui </p>
+                                            <div class="informationButton" style="border-color:#ed3035"><a style="color:#ed3035" href="www.google.ca">Planifez votre projet</a></div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>    
+                                            <p class="informationTitle" style="color:#066380">Infrastructure</p>
+                                            <p class="informationText"><b>Inginierie</b></p>
+                                            <p class="informationText">lipsume del fjdsal fjkd afsj dfksa fdkf asfji dfdaj f djisf dsjak fjdks ale;wfi fdisla fhdsau ui </p>
+                                            <div class="informationButton" style="border-color:#066380"><a style="color:#066380" href="www.google.ca">Planifez votre projet</a></div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="informationTitle" style="color:#7ea5b0">Connectivite</p>
+                                            <p class="informationText"><b>Inginierie</b></p>
+                                            <p class="informationText">lipsume del fjdsal fjkd afsj dfksa fdkf asfji dfdaj f djisf dsjak fjdks ale;wfi fdisla fhdsau ui </p>
+                                            <div class="informationButton" style="border-color:#7ea5b0;"><a style="color:#7ea5b0" href="www.google.ca">Planifez votre projet</a></div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="informationTitle" style="color:black">solutions clein en main&....</p>
+                                            <p class="informationText"><b>Inginierie</b></p>
+                                            <p class="informationText">lipsume del fjdsal fjkd afsj dfksa fdkf asfji dfdaj f djisf dsjak fjdks ale;wfi fdisla fhdsau ui </p>
+                                            <div class="informationButton"><a style="color:black" href="www.google.ca">Planifez votre projet</a></div>
+                                        </td>
+                                    </tr>
+                                </table>
+                                
+                            </td>
+                        </tr>
+                        
+                    </table>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
