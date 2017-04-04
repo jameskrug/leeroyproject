@@ -30,9 +30,18 @@
             
             
             //determine if the logo should go into fixed mode
-            if ($(this).scrollTop() >= offsetBy && $(this).scrollTop() <= (offsetBy + 2600)){
+            if ($(this).scrollTop() >= offsetBy && $(this).scrollTop() <= (offsetBy + 2000)){
                 $('.logoImages').css('position', 'fixed');
+                $('.logoImages').css('top', 50);
                 $('.movingLogo').css('position', 'fixed');
+                $('.movingLogo').css('top', 50);
+            }
+            else if($(this).scrollTop() > (offsetBy + 1900)){
+                $('.logoImages').css('position', 'absolute');
+                $('.logoImages').css('top', offsetBy + 1400);
+                
+                $('.movingLogo').css('position', 'absolute');
+                $('.movingLogo').css('top', offsetBy + 1400);
             }
             else{
                 $('.logoImages').css('position', 'absolute');
@@ -42,9 +51,9 @@
             //determine the opacity each image should be based on scroll 
             //position in pixels
             $("#theFixed").css("opacity", $(this).scrollTop() > offsetBy ? ((700 + offsetBy) - $(this).scrollTop()) * .002 : 1);
-            $("#theFixed2").css("opacity", $(this).scrollTop() > (300 + offsetBy) ? ($(this).scrollTop() < (800 + offsetBy) ? (($(this).scrollTop() - (500 + offsetBy)) * .003) : (((1300 + offsetBy) - $(this).scrollTop()) * 0.005)) : 0);
-            $("#theFixed3").css("opacity", $(this).scrollTop() > (1200 + offsetBy) ? ($(this).scrollTop() < (1800 + offsetBy) ? (($(this).scrollTop() - (1200 + offsetBy)) * .003) : (((2000 + offsetBy) - $(this).scrollTop()) * 0.005)) : 0);
-            $("#theFixed4").css("opacity", $(this).scrollTop() > (2100 + offsetBy) ? ($(this).scrollTop() < (2600 + offsetBy) ? (($(this).scrollTop() - (1500 + offsetBy)) * .003) : (((2600 + offsetBy) - $(this).scrollTop()) * 0.005)) : 0);
+            $("#theFixed2").css("opacity", $(this).scrollTop() > (200 + offsetBy) ? ($(this).scrollTop() < (700 + offsetBy) ? (($(this).scrollTop() - (400 + offsetBy)) * .004) : (((1200 + offsetBy) - $(this).scrollTop()) * 0.005)) : 0);
+            $("#theFixed3").css("opacity", $(this).scrollTop() > (800 + offsetBy) ? ($(this).scrollTop() < (1200 + offsetBy) ? (($(this).scrollTop() - (1100 + offsetBy)) * .004) : (((2000 + offsetBy) - $(this).scrollTop()) * 0.005)) : 0);
+            $("#theFixed4").css("opacity", $(this).scrollTop() > (2100 + offsetBy) ? ($(this).scrollTop() < (2600 + offsetBy) ? (($(this).scrollTop() - (1500 + offsetBy)) * .003) : 1) : 0);
             
         });
     </script>
@@ -231,7 +240,7 @@
                     <table>
                         <tr>
                             <td>
-                                <div style="height:3000px;width:50vw;position:relative;justify-content:center;align-items:center;">
+                                <div style="height:2700px;width:50vw;position:relative;justify-content:center;align-items:center;">
                                     
                                     <img class="logoImages" id="theFixed" src="images/imgLogoRed.png" usemap="#linkMap">
                                     <img style="opacity:0" class="logoImages" id="theFixed2" src="images/imgLogoBlue.png">
@@ -255,7 +264,8 @@
                                                 <p class="informationTitle" style="color:#ed3035">Conception</p>
                                                 <p class="informationText"><b>Inginierie</b></p>
                                                 <p class="informationText">lipsume del fjdsal fjkd afsj dfksa fdkf asfji dfdaj f djisf dsjak fjdks ale;wfi fdisla fhdsau ui </p>
-                                            <div class="informationButton" style="border-color:#ed3035"><a style="color:#ed3035" href="https://www.google.ca">Planifez votre projet</a></div>
+                                                <div class="informationButton" style="border-color:#ed3035"><a style="color:#ed3035" href="https://www.google.ca">Planifez votre projet</a></div>
+                                            </div>
                                         </td>
                                     </tr>
                                     <tr>
@@ -279,7 +289,7 @@
                                             <p class="informationTitle" style="color:black">solutions clein en main&....</p>
                                             <p class="informationText"><b>Inginierie</b></p>
                                             <p class="informationText">lipsume del fjdsal fjkd afsj dfksa fdkf asfji dfdaj f djisf dsjak fjdks ale;wfi fdisla fhdsau ui </p>
-                                            <div class="informationButton"><a style="color:black" href="https://www.google.ca">Planifez votre projet</a></div>
+                                            <div class="informationButton" style="margin-bottom:0"><a style="color:black" href="https://www.google.ca">Planifez votre projet</a></div>
                                         </td>
                                     </tr>
                                 </table>
@@ -289,7 +299,32 @@
                         
                     </table>
                 </tr>
-            </table>
+                
+                
+                <!--information section 3-->
+                <div style="position: absolute;margin-top: 47vw;margin-left:12vw">
+                    <p style="font-size: 2em;"><b>50 ans de passion,<br>d'expertise et<br>d'innovation</b></p>
+                    <p>lorem ipsum moda hama gaf track flia hyti<br> sadj jefwk kfdos asj  fdskj</p>
+                     <div class="informationButton" style="margin-bottom:0"><a style="color:black" href="https://www.google.ca">decouvrir l'enterprise</a></div>
+                </div>
+                <div style="width:95vw;height:95vw;margin-left:35vw">
+                    <img style="width: 95vw;position: relative;" src="images/bwGrid.png">                        
+                </div>
+                
+                
+                
+                <!--information section 4-->
+                <div>
+                    <div style="height:24vw;width:18vw;margin-left:5vw">
+                        <img src="images/radioTower.png">
+                    </div>
+                </div>
+    
+                <div style="height:500px; width:100%; background-color:green"></div>
+                <div style="height:500px; width:100%; background-color:red"></div>
+                <div style="height:500px; width:100%; background-color:orange"></div>
+
+            
         </div>
     </body>
 </html>
