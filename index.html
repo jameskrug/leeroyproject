@@ -52,7 +52,7 @@
             //position in pixels
             $("#theFixed").css("opacity", $(this).scrollTop() > offsetBy ? ((700 + offsetBy) - $(this).scrollTop()) * .002 : 1);
             $("#theFixed2").css("opacity", $(this).scrollTop() > (200 + offsetBy) ? ($(this).scrollTop() < (700 + offsetBy) ? (($(this).scrollTop() - (400 + offsetBy)) * .004) : (((1200 + offsetBy) - $(this).scrollTop()) * 0.005)) : 0);
-            $("#theFixed3").css("opacity", $(this).scrollTop() > (800 + offsetBy) ? ($(this).scrollTop() < (1200 + offsetBy) ? (($(this).scrollTop() - (1100 + offsetBy)) * .004) : (((2000 + offsetBy) - $(this).scrollTop()) * 0.005)) : 0);
+            $("#theFixed3").css("opacity", $(this).scrollTop() > (800 + offsetBy) ? ($(this).scrollTop() < (1200 + offsetBy) ? (($(this).scrollTop() - (900 + offsetBy)) * .0025) : (((2000 + offsetBy) - $(this).scrollTop()) * 0.005)) : 0);
             $("#theFixed4").css("opacity", $(this).scrollTop() > (2100 + offsetBy) ? ($(this).scrollTop() < (2600 + offsetBy) ? (($(this).scrollTop() - (1500 + offsetBy)) * .003) : 1) : 0);
             
         });
@@ -302,25 +302,66 @@
                 
                 
                 <!--information section 3-->
-                <div style="position: absolute;margin-top: 47vw;margin-left:12vw">
-                    <p style="font-size: 2em;"><b>50 ans de passion,<br>d'expertise et<br>d'innovation</b></p>
-                    <p>lorem ipsum moda hama gaf track flia hyti<br> sadj jefwk kfdos asj  fdskj</p>
-                     <div class="informationButton" style="margin-bottom:0"><a style="color:black" href="https://www.google.ca">decouvrir l'enterprise</a></div>
-                </div>
-                <div style="width:95vw;height:95vw;margin-left:35vw">
-                    <img style="width: 95vw;position: relative;" src="images/bwGrid.png">                        
+               
+                <div style="width:100%;height:95vw;position:relative;top: 15vw;">
+                     <div class="coverAngle">
+                        <div style="height: 74vw; position: absolute; margin-top: -7vw;background-color: #F8F8F8;transform: skewY(40deg);z-index: 11;width: 100%;top: 26vw;left: -13vw;">
+                            
+                        </div>
+                        <img style="top: -10vw; width: 120vw; margin-left: 13vw;position: absolute;transform: skewY(20deg);" src="images/bwGrid.png">
+                    </div>
+                    <div style="z-index: 15;margin-left: 12vw; position: absolute;top: 27vw;">
+                        <p style="font-size: 2em;"><b>50 ans de passion,<br>d'expertise et<br>d'innovation</b></p>
+                        <p>lorem ipsum moda hama gaf track flia hyti<br> sadj jefwk kfdos asj  fdskj</p>
+                        <div class="informationButton" style="margin-bottom:0"><a style="color:black" href="https://www.google.ca">decouvrir l'enterprise</a></div>
+                    </div>
                 </div>
                 
                 
                 
                 <!--information section 4-->
                 <div>
-                    <div style="height:24vw;width:18vw;margin-left:5vw">
-                        <img src="images/radioTower.png">
-                    </div>
+                    <table>
+                        <tr>
+                            <td style="height:17vw">
+                                <div id="gridImageDiv" style="height:16vw;overflow:hidden;position:relative">
+                                <img style="top:-2vw;position:absolute;top:-5vw" src="images/truck.png">
+                                <div style="position: absolute;width: 100%;height: 100%;background-color: black;opacity: 0.6;">
+                                    <p style="color: white;text-align: center;padding-top: 2vw;">lorem ipsum idme yela forto impa noavs treste</p>
+                                </div>
+                            </div>            
+                            </td>
+                        </tr>
+                         <tr>
+                            <td style="height:17vw">
+                                <div id="gridImageDiv" style="height:16vw;overflow:hidden;position:relative">
+                                <img style="height:32vw;width:28vw;top:-2vw;position:absolute;top:-5vw" src="images/radioTower.png">
+                                <div style="position: absolute;width: 100%;height: 100%;background-color: black;opacity: 0.6;">
+                                    <p style="color: white;text-align: center;padding-top: 2vw;">lorem ipsum idme yela forto impa noavs treste</p>
+                                </div>
+                            </div>            
+                            </td>
+                            <td style="width:20vw"></td>
+                            <td style="width: 47vw;">
+                                <p style="font-size: 2em;"><b>nos projets</b></p>
+                                <p>lorem ipsum moda hama gaf track flia hyti<br> sadj jefwk kfdos asj  fdskj</p>
+                                <div class="informationButton" style="margin:0"><a style="color:black" href="https://www.google.ca">Planifez votre projet</a></div>
+                            </td>
+                        </tr> <tr>
+                            <td>
+                                <div id="gridImageDiv" style="height:16vw;overflow:hidden;position:relative">
+                                <img style="left:-35vw;position:absolute;top:-5vw" src="images/microwave.png">
+                                <div style="position: absolute;width: 100%;height: 100%;background-color: black;opacity: 0.6;">
+                                    <p style="color: white;text-align: center;padding-top: 2vw;">lorem ipsum idme yela forto impa noavs treste</p>
+                                </div>
+                            </div>            
+                            </td>
+                        </tr>
+                    </table>
+                    
                 </div>
     
-                <div style="height:500px; width:100%; background-color:green"></div>
+                <div style="height:500px; width:100%; background-color:#F8F8F8"></div>
                 <div style="height:500px; width:100%; background-color:red"></div>
                 <div style="height:500px; width:100%; background-color:orange"></div>
 
