@@ -5,6 +5,11 @@ html{
 body {
     height: 100%;
     margin:0;
+    font-family: arial;
+}
+
+a {
+    text-decoration: none;
 }
 
 border,tr,td {
@@ -157,6 +162,40 @@ table {
     box-shadow: 5px 2px 5px grey;
 }
 
+.coverAngle2{
+    background-color: white;
+    width: 57%;
+    height: 21vw;
+    transform: skewY(-20deg);
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 5px 2px 5px grey;
+    margin-top: 5vw;
+}
+
+.mapGrid{
+    width:20vw;
+}
+
+.mapGrid img{
+    width: 7vw;
+}
+
+.mapGrid p{
+    font-size: 0.5em;
+    margin: 0 0 10px 0;
+    font-weight: bold;
+}
+
+.fadeAway{
+    margin-left:30vw;
+}
+
+.fadeAway p{
+    font-size:2em;
+}
+
 .navOption{
     color:gray;
     padding-left:12px;
@@ -202,6 +241,7 @@ table {
     font-size:3em;
     text-align:center;
     padding-top: 100px;
+    font-weight: bold;
 }
 
 .informationText{
